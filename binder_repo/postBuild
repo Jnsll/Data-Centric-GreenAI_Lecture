@@ -1,0 +1,4 @@
+#!/bin/bash
+# Runs once when Binder builds the image, so students don't wait on this
+# (or risk a failed download) at notebook launch time.
+python -c "import nltk; nltk.download('stopwords')"
